@@ -48,7 +48,7 @@ export interface OverrideConfig {
 }
 
 const HOST_CONFIG = {
-    journeyPlanner: 'https://api.entur.io/journey-planner/v2',
+    journeyPlanner: 'https://api.entur.io/journey-planner/v3',
     geocoder: 'https://api.entur.io/geocoder/v1',
     nsr: 'https://api.entur.io/stop-places/v1',
 }
