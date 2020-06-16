@@ -464,6 +464,10 @@ export interface TripPattern {
     legs: Array<Leg>
     startTime: string
     walkDistance: number
+    systemNotices: Array<{
+        tag: string
+        text: string
+    }>
 }
 
 export interface GetDeparturesParams {

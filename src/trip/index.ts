@@ -39,6 +39,10 @@ interface TripPattern {
     legs: Array<Leg>
     startTime: string
     walkDistance: number
+    systemNotices: Array<{
+        tag: string
+        text: string
+    }>
 }
 
 interface TransportSubmodeParam {
