@@ -297,6 +297,11 @@ type $entur$sdk$Location = {
 /**
  * Trip
  */
+type $entur$sdk$Metadata = {
+    searchWindowUsed: number,
+    nextDateTime: string,
+    prevDateTime: string,
+}
 
 type $entur$sdk$Authority = {
     id: string,
@@ -661,7 +666,7 @@ declare module '@entur/sdk' {
         getTripPatterns: (
             params: $entur$sdk$GetTripPatternsParams,
             overrideConfig?: $entur$sdk$OverrideConfig,
-        ) => Promise<Array<$entur$sdk$TripPattern>>,
+        ) => Promise<{ tripPatterns: Array<$entur$sdk$TripPattern>, metadata?: $entur$sdk$Metadata }>,
 
         findTrips: (
             from: string,
